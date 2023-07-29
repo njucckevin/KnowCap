@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="570c8fcb-a70d-4c65-9830-bd5df388b30d" name="2080ti1">
+        <fileTransfer accessType="SFTP" host="210.28.133.13" port="21084" sshConfigId="7fa2e0db-b2f4-405e-b58f-4eb88659c828" sshConfig="chengkz@210.28.133.13:21084 password">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" keepAliveTimeout="0" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+      <webServer id="436be306-ef01-42d0-8d1c-429787b5982d" name="21084">
+        <fileTransfer accessType="SFTP" host="210.28.133.13" port="21084" sshConfigId="7fa2e0db-b2f4-405e-b58f-4eb88659c828" sshConfig="chengkz@210.28.133.13:21084 password">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" keepAliveTimeout="0" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>
