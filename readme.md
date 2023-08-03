@@ -1,5 +1,15 @@
 ## Beyond Generic: Enhancing Image Captioning with Real-World Knowledge using Vision-Language Pre-Training Model
-This repo provides the source code & data of our paper: Beyond Generic: Enhancing Image Captioning with Real-World Knowledge using Vision-Language Pre-Training Model.
+This repo provides the source code & data of our paper: [Beyond Generic: Enhancing Image Captioning with Real-World Knowledge using Vision-Language Pre-Training Model. (ACMMM 23)](https://arxiv.org/abs/2308.01126)
+```
+@misc{cheng2023generic,
+      title={Beyond Generic: Enhancing Image Captioning with Real-World Knowledge using Vision-Language Pre-Training Model}, 
+      author={Kanzhi Cheng and Wenpo Song and Zheng Ma and Wenhao Zhu and Zixuan Zhu and Jianbing Zhang},
+      year={2023},
+      eprint={2308.01126},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV}
+}
+```
 ### Code Structure
 ***
 ````
