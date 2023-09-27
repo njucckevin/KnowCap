@@ -50,32 +50,32 @@ This repo provides the source code & data of our paper: [Beyond Generic: Enhanci
 KnowCap is a new dataset for the evaluation of knowledge-enhanced image captioning, containing 1424 images and 4156 reference descriptions
 carefully written by human annotators.
 
-![](https://beyondgeneric.s3.amazonaws.com/knowcap.png)
+![](https://drive.google.com/file/d/1IGuBUAA1xm2VTGlEka9Bj1lQjkQVaiOV/view?usp=drive_link)
 
-Download the images and annotations of [KnowCap](https://beyondgeneric.s3.amazonaws.com/KnowCap.zip).
+Download the images and annotations of [KnowCap](https://drive.google.com/file/d/1DOk5WZZgHyO6tKT8A135hMgePid-akFq/view?usp=drive_link).
 ### Preparing Data&Model
 ***
 #### Step1：
 Download the images of:
  * [COCO2014](https://github.com/ruotianluo/ImageCaptioning.pytorch/blob/master/data/README.md)
- * [KnowCap](https://beyondgeneric.s3.amazonaws.com/KnowCap.zip)
- * [Replay images selected from cc12m](https://beyondgeneric.s3.amazonaws.com/cc12m_replay.zip)
+ * [KnowCap](https://drive.google.com/file/d/1DOk5WZZgHyO6tKT8A135hMgePid-akFq/view?usp=drive_link)
+ * [Replay images selected from cc12m](https://drive.google.com/file/d/1tdVZ1rUpr5va-NwInMwBglRpSGOzUoMu/view?usp=drive_link)
 #### Step2：
 `prepro_data.py`, Collate and split coco and knowcap datasets in ./data.
 
-Alternatively, we provide the processed [data](https://beyondgeneric.s3.amazonaws.com/data.zip) that can be put into . /data directory. Note that the file_path in each dataset needs to be modified according to the path of the downloaded image in step1. Similarly, some of the parameters in config need to be modified depending on your own.
+Alternatively, we provide the processed [data](https://drive.google.com/file/d/1DBdnqcH_lOm--t5pZOlac1j1my4kVgrP/view?usp=drive_link) that can be put into . /data directory. Note that the file_path in each dataset needs to be modified according to the path of the downloaded image in step1. Similarly, some of the parameters in config need to be modified depending on your own.
 
 #### Step3:
 Prepare the ckpts of VLP models (take OFA as an example) for training and testing.
 1. Download the transformers version ckpts of [OFA](https://huggingface.co/OFA-Sys/ofa-large)
 2. However, since there are some [problems](https://github.com/OFA-Sys/OFA/issues/296) with the official ckpts in transformers, we manually replaced the original parameters with the official ckpts in fairseq using `convert_ofa.py`
 
-Alternatively, we provide the converted [ckpts](https://beyondgeneric.s3.amazonaws.com/OFA-large-caption-XEfinetuned.zip).
+Alternatively, we provide the converted [ckpts](https://drive.google.com/file/d/1QQZ9eyO63JBBtyK5YIKA4CJ3jjAPuhQM/view?usp=drive_link).
 ### Reproduce the main results
 ***
 The baseline result of *OFA* in knowcap: `CUDA_VISIBLE_DEVICES=0 python test_knowcap.py --model OFA --ofa_ckpts xxx --length_penalty 1.0`, the `ofa_ckpts` is obtained in step3.
 
-The *OFA+K-Replay* result in knowcap: `CUDA_VISIBLE_DEVICES=0 python test_knowcap.py --model OFA --trained_ckpts xxx --length_penalty 1.0`, the `trained_ckpts` can be downloaded in [here](https://beyondgeneric.s3.amazonaws.com/model_ofa_kreplay.pt).
+The *OFA+K-Replay* result in knowcap: `CUDA_VISIBLE_DEVICES=0 python test_knowcap.py --model OFA --trained_ckpts xxx --length_penalty 1.0`, the `trained_ckpts` can be downloaded in [here](https://drive.google.com/file/d/1z2InwjGOcmTOFGr25nIFI_tGCPNBnc1H/view?usp=drive_link).
 
 To evaluate on coco, use `test.py` instead of `test_knowcap.py`.
 ### Training with K-Replay
