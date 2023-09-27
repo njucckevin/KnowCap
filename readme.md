@@ -50,7 +50,7 @@ This repo provides the source code & data of our paper: [Beyond Generic: Enhanci
 KnowCap is a new dataset for the evaluation of knowledge-enhanced image captioning, containing 1424 images and 4156 reference descriptions
 carefully written by human annotators.
 
-![](https://drive.google.com/file/d/1IGuBUAA1xm2VTGlEka9Bj1lQjkQVaiOV/view?usp=drive_link)
+![](knowcap.png)
 
 Download the images and annotations of [KnowCap](https://drive.google.com/file/d/1DOk5WZZgHyO6tKT8A135hMgePid-akFq/view?usp=drive_link).
 ### Preparing Data&Model
