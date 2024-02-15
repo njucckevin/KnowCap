@@ -78,6 +78,10 @@ The baseline result of *OFA* in knowcap: `CUDA_VISIBLE_DEVICES=0 python test_kno
 The *OFA+K-Replay* result in knowcap: `CUDA_VISIBLE_DEVICES=0 python test_knowcap.py --model OFA --trained_ckpts xxx --length_penalty 1.0`, the `trained_ckpts` can be downloaded in [here](https://drive.google.com/file/d/1z2InwjGOcmTOFGr25nIFI_tGCPNBnc1H/view?usp=drive_link).
 
 To evaluate on coco, use `test.py` instead of `test_knowcap.py`.
+
+> #### Tips:
+To eliminate the need for `coco_id` in the evaluation, we customized the COCOEval function in `eval.py`.
+Therefore the `xxx/site-packages/pycocoevalcap/eval.py` needs to be replaced or modified with the `eval.py` to use the current evaluation code.
 ### Training with K-Replay
 ***
 #### Step4：
